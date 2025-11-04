@@ -1,0 +1,72 @@
+  *{
+    padding: 0%;
+    margin: 0%;
+  }
+  body {
+    background-color: black;
+    height: 100vh;
+    background: linear-gradient(220deg,black,#2a0000,black,black,#2a0000,black,black);
+  }
+  
+  .options{
+  }
+  nav{
+    display: flex;
+    position: fixed;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 15%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 3px black;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 10px;
+   font-family: 'Netflix Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        margin-left: 1%;
+    }
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: #B00000;
+}
+
+
+@keyframes shrinkX {
+    to {
+        font-size: 5rem;
+    }
+}
+
+/* Hide letters initially */
+.letter {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: flyIn 0.3s forwards;
+}
+
+.letterx {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: flyIn 0.3s forwards;
+}
+
+@keyframes flyIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
