@@ -1,0 +1,196 @@
+  body {
+    background: linear-gradient(120deg,black,black,black,black,black,#B00000);
+    height: 100vh;
+  }
+  @media screen and (max-width:700px) {
+    body {
+            height: 100%;
+            background: linear-gradient(180deg,black,black,black,black,black);
+    }
+  }
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 10px;
+    margin-left: 10%;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width:600px) {
+    .logo {
+        margin-left: 1%;
+    }
+}
+
+.white {
+    color: white;
+}
+
+.red {
+    color: #B00000;
+}
+
+
+@keyframes shrinkX {
+    to {
+        font-size: 5rem;
+    }
+}
+
+/* Hide letters initially */
+.letter {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: flyIn 0.3s forwards;
+}
+
+.letterx {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: flyIn 0.3s forwards;
+}
+
+@keyframes flyIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+span {
+    margin-right: 3px;
+}
+
+.buttons {
+    display: flex;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+    width: 70%;
+    flex-direction: column;
+    align-items: end;
+    margin-left: 20px;
+
+}
+
+@media screen and (max-width:750px) {
+    .buttons {
+        margin-left: 0px;
+        width: 40%;
+    }
+}
+
+.buttons select {
+    background: transparent;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+option {
+    color: black;
+    background-color: #B00000;
+    background: white;
+}
+
+.sign-in {
+    display: flex;
+    width: fit-content;
+    margin-left: 10px;
+    width: 20%;
+}
+
+.sign-in button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #B00000;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    border: none;
+    outline: none;
+}
+
+.sign-in a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Netflix Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.sign-in button:hover {
+    background-color: #7a0101;
+}
+.tag-lines{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 7%;
+}
+
+@media screen and (max-width:800px) {
+  .tag-lines{
+    font-size: 20px;
+    margin-top: 30px;
+}  
+}
+.details{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+.details input{
+    background: transparent;
+    background-color: rgb(14, 14, 14);
+    border-radius: 5px;
+    width: 450px;
+    padding: 15px 10px;
+    padding-left: 20px;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    font-size: 20PX;
+}
+.email-line{
+    font-family: "Comfortaa", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+@media screen and (max-width:600px) {
+  .email-line{
+    font-size: 25px;
+}  
+}
+.details .button{
+    font-size: 21px;
+    background-color: #B00000;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    border: none;
+    outline: none;
+    font-family: "Comfortaa", sans-serif;
+    width: 200px;
+    text-align: center;
+    padding-top: 14px;
+}
+.details .button:hover{
+    background-color: #7a0101;
+}
+.details a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.contact{
+    color: white;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+}
